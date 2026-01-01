@@ -1,0 +1,344 @@
+[
+  {
+    "name": "Diabetes Management Program",
+    "description": "Comprehensive diabetes care coordination program including regular monitoring, education, and lifestyle support for patients with Type 2 diabetes.",
+    "category": "chronic",
+    "icd10Codes": ["E11.9", "E11.65", "E11.21", "E11.22", "E11.40", "E10.9"],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "conditions": ["E11", "E10"],
+      "excludeConditions": [],
+      "requireActiveCondition": true
+    },
+    "interventions": [
+      {"name": "Monthly Care Coordinator Check-ins", "frequency": "monthly"},
+      {"name": "Quarterly HbA1c Testing", "frequency": "quarterly"},
+      {"name": "Annual Eye Exam", "frequency": "yearly"},
+      {"name": "Annual Foot Exam", "frequency": "yearly"},
+      {"name": "Diabetes Self-Management Education", "frequency": "initial + as needed"},
+      {"name": "Nutritional Counseling", "frequency": "quarterly"},
+      {"name": "Remote Glucose Monitoring", "frequency": "continuous"}
+    ],
+    "outcomes": [
+      "Reduce HbA1c to below 7%",
+      "Prevent diabetes-related complications",
+      "Improve medication adherence",
+      "Reduce emergency department visits"
+    ],
+    "costEstimate": 450,
+    "duration": "12 months",
+    "isTemplate": true
+  },
+  {
+    "name": "Heart Failure Care Program",
+    "description": "Intensive care management for patients with heart failure including monitoring, medication optimization, and lifestyle intervention.",
+    "category": "chronic",
+    "icd10Codes": ["I50.9", "I50.22", "I50.32", "I50.42"],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "conditions": ["I50"],
+      "excludeConditions": [],
+      "requireActiveCondition": true
+    },
+    "interventions": [
+      {"name": "Weekly Weight Monitoring Calls", "frequency": "weekly"},
+      {"name": "Remote Patient Monitoring", "frequency": "daily"},
+      {"name": "Medication Reconciliation", "frequency": "monthly"},
+      {"name": "Sodium Restriction Education", "frequency": "initial"},
+      {"name": "Cardiac Rehabilitation Referral", "frequency": "as needed"},
+      {"name": "Cardiologist Follow-up Coordination", "frequency": "quarterly"}
+    ],
+    "outcomes": [
+      "Reduce 30-day readmission rate",
+      "Improve ejection fraction",
+      "Increase functional capacity",
+      "Optimize medication regimen"
+    ],
+    "costEstimate": 650,
+    "duration": "12 months",
+    "isTemplate": true
+  },
+  {
+    "name": "COPD Management Program",
+    "description": "Pulmonary care program for patients with chronic obstructive pulmonary disease focusing on exacerbation prevention and symptom management.",
+    "category": "chronic",
+    "icd10Codes": ["J44.9", "J44.1", "J44.0"],
+    "eligibilityCriteria": {
+      "minAge": 40,
+      "conditions": ["J44"],
+      "excludeConditions": [],
+      "requireActiveCondition": true
+    },
+    "interventions": [
+      {"name": "Pulmonary Rehabilitation", "frequency": "initial 8-12 weeks"},
+      {"name": "Inhaler Technique Training", "frequency": "initial + annually"},
+      {"name": "Smoking Cessation Support", "frequency": "as needed"},
+      {"name": "Flu/Pneumonia Vaccination", "frequency": "annually"},
+      {"name": "Action Plan Development", "frequency": "initial"},
+      {"name": "Oxygen Therapy Management", "frequency": "as needed"}
+    ],
+    "outcomes": [
+      "Reduce COPD exacerbations",
+      "Improve 6-minute walk distance",
+      "Decrease hospitalizations",
+      "Improve quality of life scores"
+    ],
+    "costEstimate": 500,
+    "duration": "12 months",
+    "isTemplate": true
+  },
+  {
+    "name": "Hypertension Control Program",
+    "description": "Blood pressure management program with home monitoring, lifestyle coaching, and medication optimization.",
+    "category": "chronic",
+    "icd10Codes": ["I10", "I11.9", "I12.9", "I13.10"],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "conditions": ["I10", "I11", "I12", "I13"],
+      "excludeConditions": [],
+      "requireActiveCondition": true
+    },
+    "interventions": [
+      {"name": "Home Blood Pressure Monitoring", "frequency": "daily"},
+      {"name": "Monthly Coaching Calls", "frequency": "monthly"},
+      {"name": "DASH Diet Education", "frequency": "initial"},
+      {"name": "Physical Activity Counseling", "frequency": "quarterly"},
+      {"name": "Medication Adherence Support", "frequency": "monthly"},
+      {"name": "Stress Management Resources", "frequency": "as needed"}
+    ],
+    "outcomes": [
+      "Achieve BP < 130/80 mmHg",
+      "Improve medication adherence to >80%",
+      "Reduce cardiovascular risk",
+      "Prevent target organ damage"
+    ],
+    "costEstimate": 300,
+    "duration": "12 months",
+    "isTemplate": true
+  },
+  {
+    "name": "Chronic Kidney Disease Program",
+    "description": "Nephrology care coordination for patients with CKD stages 3-5, focusing on disease progression prevention.",
+    "category": "chronic",
+    "icd10Codes": ["N18.3", "N18.4", "N18.5", "N18.6"],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "conditions": ["N18"],
+      "excludeConditions": [],
+      "requireActiveCondition": true
+    },
+    "interventions": [
+      {"name": "Quarterly Nephrology Reviews", "frequency": "quarterly"},
+      {"name": "Dietary Counseling (low protein/sodium)", "frequency": "monthly"},
+      {"name": "BP and Diabetes Co-management", "frequency": "ongoing"},
+      {"name": "Medication Nephrotoxicity Review", "frequency": "quarterly"},
+      {"name": "Dialysis/Transplant Education", "frequency": "as needed"},
+      {"name": "Anemia Management", "frequency": "monthly"}
+    ],
+    "outcomes": [
+      "Slow GFR decline",
+      "Prevent acute kidney injury",
+      "Prepare for renal replacement therapy",
+      "Manage CKD complications"
+    ],
+    "costEstimate": 550,
+    "duration": "12 months",
+    "isTemplate": true
+  },
+  {
+    "name": "Behavioral Health Integration",
+    "description": "Integrated mental health support for patients with depression and anxiety, coordinated with primary care.",
+    "category": "behavioral",
+    "icd10Codes": ["F32.9", "F33.0", "F33.1", "F41.1", "F41.9"],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "conditions": ["F32", "F33", "F41"],
+      "excludeConditions": ["F20", "F31"],
+      "requireActiveCondition": true
+    },
+    "interventions": [
+      {"name": "PHQ-9/GAD-7 Monitoring", "frequency": "monthly"},
+      {"name": "Behavioral Health Coaching", "frequency": "bi-weekly"},
+      {"name": "Medication Management Support", "frequency": "as needed"},
+      {"name": "Crisis Line Access", "frequency": "24/7"},
+      {"name": "Cognitive Behavioral Resources", "frequency": "ongoing"},
+      {"name": "Social Support Referrals", "frequency": "as needed"}
+    ],
+    "outcomes": [
+      "Reduce PHQ-9 scores by 50%",
+      "Improve functional status",
+      "Reduce ED utilization for mental health",
+      "Improve treatment engagement"
+    ],
+    "costEstimate": 400,
+    "duration": "6 months",
+    "isTemplate": true
+  },
+  {
+    "name": "Transitional Care Management",
+    "description": "Post-discharge care coordination for patients leaving the hospital to prevent readmissions.",
+    "category": "transitions",
+    "icd10Codes": [],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "recentHospitalization": true,
+      "daysPostDischarge": 30
+    },
+    "interventions": [
+      {"name": "48-hour Post-Discharge Call", "frequency": "once"},
+      {"name": "7-Day Follow-up Visit", "frequency": "once"},
+      {"name": "14-Day Medication Reconciliation", "frequency": "once"},
+      {"name": "30-Day Care Plan Review", "frequency": "once"},
+      {"name": "Home Health Coordination", "frequency": "as needed"},
+      {"name": "DME/Supplies Coordination", "frequency": "as needed"}
+    ],
+    "outcomes": [
+      "Prevent 30-day readmission",
+      "Ensure medication accuracy",
+      "Complete follow-up appointments",
+      "Address social needs"
+    ],
+    "costEstimate": 250,
+    "duration": "30 days",
+    "isTemplate": true
+  },
+  {
+    "name": "Annual Wellness Visit Program",
+    "description": "Preventive care outreach program to ensure Medicare patients complete their Annual Wellness Visit.",
+    "category": "preventive",
+    "icd10Codes": ["Z00.00"],
+    "eligibilityCriteria": {
+      "minAge": 65,
+      "insuranceType": "Medicare",
+      "noAWVInPast12Months": true
+    },
+    "interventions": [
+      {"name": "AWV Scheduling Outreach", "frequency": "annual"},
+      {"name": "Health Risk Assessment", "frequency": "annual"},
+      {"name": "Advance Care Planning Discussion", "frequency": "annual"},
+      {"name": "Screening Schedule Review", "frequency": "annual"},
+      {"name": "Cognitive Assessment", "frequency": "annual"}
+    ],
+    "outcomes": [
+      "Increase AWV completion rate",
+      "Update preventive care schedules",
+      "Identify care gaps",
+      "Document advance directives"
+    ],
+    "costEstimate": 175,
+    "duration": "Annual",
+    "isTemplate": true
+  },
+  {
+    "name": "Cancer Screening Outreach",
+    "description": "Targeted outreach for patients overdue for colorectal, breast, or cervical cancer screenings.",
+    "category": "preventive",
+    "icd10Codes": ["Z12.11", "Z12.31", "Z12.4"],
+    "eligibilityCriteria": {
+      "colorectal": {"minAge": 45, "maxAge": 75},
+      "breast": {"minAge": 50, "maxAge": 74, "gender": "female"},
+      "cervical": {"minAge": 21, "maxAge": 65, "gender": "female"}
+    },
+    "interventions": [
+      {"name": "Screening Gap Identification", "frequency": "quarterly"},
+      {"name": "Patient Education Mailing", "frequency": "as needed"},
+      {"name": "Scheduling Assistance", "frequency": "as needed"},
+      {"name": "FIT Kit Distribution", "frequency": "as needed"},
+      {"name": "Navigation Support", "frequency": "as needed"}
+    ],
+    "outcomes": [
+      "Increase screening rates by 20%",
+      "Early cancer detection",
+      "Reduce screening disparities",
+      "Improve HEDIS measures"
+    ],
+    "costEstimate": 100,
+    "duration": "Ongoing",
+    "isTemplate": true
+  },
+  {
+    "name": "Weight Management Program",
+    "description": "Comprehensive obesity management program including nutrition, exercise, behavioral support, and medication options.",
+    "category": "wellness",
+    "icd10Codes": ["E66.9", "E66.01", "E66.09"],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "minBMI": 30,
+      "conditions": ["E66"]
+    },
+    "interventions": [
+      {"name": "Initial Comprehensive Assessment", "frequency": "once"},
+      {"name": "Weekly Nutrition Coaching", "frequency": "weekly x 12"},
+      {"name": "Exercise Prescription", "frequency": "initial + monthly"},
+      {"name": "Behavioral Counseling", "frequency": "bi-weekly"},
+      {"name": "GLP-1 Medication Evaluation", "frequency": "as appropriate"},
+      {"name": "Monthly Weigh-ins", "frequency": "monthly"}
+    ],
+    "outcomes": [
+      "5-10% body weight reduction",
+      "Improve metabolic markers",
+      "Increase physical activity",
+      "Sustain weight loss at 12 months"
+    ],
+    "costEstimate": 600,
+    "duration": "12 months",
+    "isTemplate": true
+  },
+  {
+    "name": "Opioid Use Disorder Treatment",
+    "description": "Medication-assisted treatment program with behavioral support for patients with opioid use disorder.",
+    "category": "behavioral",
+    "icd10Codes": ["F11.10", "F11.20", "F11.21"],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "conditions": ["F11"],
+      "consentToMAT": true
+    },
+    "interventions": [
+      {"name": "Buprenorphine/Suboxone Induction", "frequency": "initial"},
+      {"name": "Weekly Medication Visits", "frequency": "weekly initially"},
+      {"name": "Individual Counseling", "frequency": "weekly"},
+      {"name": "Group Therapy Sessions", "frequency": "weekly"},
+      {"name": "Urine Drug Screening", "frequency": "random"},
+      {"name": "Naloxone Distribution", "frequency": "initial + refills"},
+      {"name": "Social Services Coordination", "frequency": "as needed"}
+    ],
+    "outcomes": [
+      "Achieve sustained remission",
+      "Reduce illicit opioid use",
+      "Prevent overdose deaths",
+      "Improve functional status"
+    ],
+    "costEstimate": 800,
+    "duration": "12+ months",
+    "isTemplate": true
+  },
+  {
+    "name": "Remote Patient Monitoring - Chronic Conditions",
+    "description": "Technology-enabled monitoring program for patients with multiple chronic conditions.",
+    "category": "chronic",
+    "icd10Codes": ["E11.9", "I10", "I50.9", "J44.9"],
+    "eligibilityCriteria": {
+      "minAge": 18,
+      "minChronicConditions": 2,
+      "ableToUseDevices": true
+    },
+    "interventions": [
+      {"name": "Device Setup and Training", "frequency": "initial"},
+      {"name": "Daily Vital Signs Transmission", "frequency": "daily"},
+      {"name": "Alert-Based Nurse Outreach", "frequency": "as triggered"},
+      {"name": "Monthly Data Review", "frequency": "monthly"},
+      {"name": "Provider Report Generation", "frequency": "monthly"},
+      {"name": "Medication Adjustment Coordination", "frequency": "as needed"}
+    ],
+    "outcomes": [
+      "Early intervention for deterioration",
+      "Reduce hospitalizations by 25%",
+      "Improve patient engagement",
+      "Better clinical decision support"
+    ],
+    "costEstimate": 350,
+    "duration": "Ongoing",
+    "isTemplate": true
+  }
+]
